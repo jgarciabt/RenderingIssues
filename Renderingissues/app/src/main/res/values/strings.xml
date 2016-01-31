@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Rendering issues</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="overdraw_activity_label">Overdraw activity</string>
+</resources>
