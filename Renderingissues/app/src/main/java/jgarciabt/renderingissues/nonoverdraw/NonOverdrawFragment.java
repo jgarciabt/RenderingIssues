@@ -1,4 +1,4 @@
-package jgarciabt.renderingissues.overdraw;
+package jgarciabt.renderingissues.nonoverdraw;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,26 +11,27 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 import jgarciabt.renderingissues.R;
+import jgarciabt.renderingissues.overdraw.ColorItem;
+import jgarciabt.renderingissues.overdraw.OverdrawAdapter;
 
 /**
  * Created by Jose Garcia on 31/01/2016.
  */
-public class OverdrawFragment extends Fragment {
+public class NonOverdrawFragment extends Fragment {
 
 
     @Nullable @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-
-        View rootView = inflater.inflate(R.layout.fragment_overdraw, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_non_overdraw, container, false);
 
         ListView listView = (ListView) rootView.findViewById(R.id.item_list);
 
         ArrayList<ColorItem> colorItemArrayList = new ArrayList<>();
         populateColorItemsArrayList(colorItemArrayList);
 
-        OverdrawAdapter overdrawAdapter = new OverdrawAdapter(getActivity(), colorItemArrayList);
-        listView.setAdapter(overdrawAdapter);
+        NonOverdrawAdapter nonOverdrawAdapter = new NonOverdrawAdapter(getActivity(), colorItemArrayList);
+        listView.setAdapter(nonOverdrawAdapter);
 
         return rootView;
     }

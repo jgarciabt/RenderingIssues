@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import jgarciabt.renderingissues.nonoverdraw.NonOverdrawActivity;
 import jgarciabt.renderingissues.overdraw.OverdrawActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -44,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void showOptimizedActivity() {
 
+        Intent intent = new Intent(this, NonOverdrawActivity.class);
+        startActivity(intent);
     }
 
 }

@@ -19,6 +19,8 @@
         <activity
             android:name=".overdraw.OverdrawActivity"
             android:label="@string/overdraw_activity_label"/>
+        <activity android:name=".nonoverdraw.NonOverdrawActivity"
+                  android:label="@string/non_overdrawe_activity"/>
 
     </application>
 
