@@ -8,7 +8,7 @@
         android:id="@+id/color_sample_image"
         android:layout_width="@dimen/icon_dimen"
         android:layout_height="@dimen/icon_dimen"
-        android:layout_margin="16dp"/>
+        android:layout_margin="@dimen/activity_horizontal_margin"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,7 +40,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="4dp"
+            android:padding="2dp"
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur convallis malesuada lacus"/>
     </LinearLayout>
 
