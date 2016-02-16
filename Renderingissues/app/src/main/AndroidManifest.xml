@@ -20,7 +20,9 @@
             android:name=".overdraw.OverdrawActivity"
             android:label="@string/overdraw_activity_label"/>
         <activity android:name=".nonoverdraw.NonOverdrawActivity"
-                  android:label="@string/non_overdrawe_activity"/>
+                  android:label="@string/non_overdraw_activity"/>
+        <activity android:name=".comparelayouts.CompareLayoutsActivity"
+                  android:label="@string/compare_layouts_activity"/>
 
     </application>
 

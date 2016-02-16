@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import jgarciabt.renderingissues.comparelayouts.CompareLayoutsActivity;
 import jgarciabt.renderingissues.nonoverdraw.NonOverdrawActivity;
 import jgarciabt.renderingissues.overdraw.OverdrawActivity;
 
@@ -35,6 +36,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button compareLayoutsActivityButton = (Button) findViewById(R.id.compare_layout_activity_button);
+        compareLayoutsActivityButton.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View view) {
+                showCompareLayoutActivity();
+            }
+        });
+
     }
 
     private void showOverdrawActivity() {
@@ -46,6 +54,12 @@ public class MainActivity extends AppCompatActivity {
     private void showOptimizedActivity() {
 
         Intent intent = new Intent(this, NonOverdrawActivity.class);
+        startActivity(intent);
+    }
+
+    private void showCompareLayoutActivity() {
+
+        Intent intent = new Intent(this, CompareLayoutsActivity.class);
         startActivity(intent);
     }
 
